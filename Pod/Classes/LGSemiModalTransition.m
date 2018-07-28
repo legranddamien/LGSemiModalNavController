@@ -60,8 +60,8 @@
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext]
                          animations:^{
-                             backgroundView.alpha = _backgroundShadeAlpha;
-                            [(UIView*)[transitionContext.containerView.subviews objectAtIndex:0] setTransform:_scaleTransform];
+                             backgroundView.alpha = self.backgroundShadeAlpha;
+                            [(UIView*)[transitionContext.containerView.subviews objectAtIndex:0] setTransform:self.scaleTransform];
                          }
                          completion:^(BOOL finished) {
                              
